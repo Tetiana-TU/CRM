@@ -4,7 +4,11 @@ import React from 'react';
 import { useRouter } from 'next/navigation';
 import CompanyFormModal from '@/app/components/company-form-modal';
 
-export interface PageProps {}
+export interface PageProps {
+  params: {
+    id: string;
+  };
+}
 
 export default function Page({}: PageProps) {
   const router = useRouter();
