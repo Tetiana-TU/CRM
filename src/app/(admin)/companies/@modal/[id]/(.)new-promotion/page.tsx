@@ -8,7 +8,7 @@ export interface PageProps {
   params: { id: string };
 }
 
-export default function Page({ params }: PageProps) {
+export default async function Page({ params }: PageProps) {
   // const router = useRouter();
   return (
     <PromotionFormModal
