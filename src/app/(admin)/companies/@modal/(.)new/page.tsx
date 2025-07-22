@@ -5,9 +5,7 @@ import { useRouter } from 'next/navigation';
 import CompanyFormModal from '@/app/components/company-form-modal';
 
 export interface PageProps {
-  params: {
-    id: string;
-  };
+  params: { [key: string]: string };
 }
 
 export default function Page({}: PageProps) {
