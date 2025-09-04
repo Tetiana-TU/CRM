@@ -6,7 +6,7 @@ import CompanyTable from '@/app/components/company-table';
 
 export interface PageProps {}
 
-export default async function Page({}: PageProps) {
+export default async function Page() {
   const queryClient = getQueryClient();
 
   await queryClient.prefetchQuery({
